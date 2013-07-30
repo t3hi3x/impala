@@ -18,6 +18,10 @@ The rest of this README describes how to build Cloudera Impala from this reposit
 
 *Note:* Ubuntu 12.04 (and later) requires the libevent1-dev package to work with Thrift v0.9
 
+*Note:* Install perl-podlators for Fedora
+
+    sudo yum install perl-podlators
+
 ### Install LLVM
 
     wget http://llvm.org/releases/3.2/llvm-3.2.src.tar.gz
@@ -37,8 +41,8 @@ Make sure that the Oracle Java Development Kit 6 is installed (not OpenJDK), and
 
 ### Install Maven
 
-    wget http://www.fightrice.com/mirrors/apache/maven/maven-3/3.0.4/binaries/apache-maven-3.0.4-bin.tar.gz
-    tar xvf apache-maven-3.0.4.tar.gz && sudo mv apache-maven-3.0.4 /usr/local
+    wget http://archive.apache.org/dist/maven/binaries/apache-maven-3.0.4-bin.tar.gz
+    tar xvf apache-maven-3.0.4-bin.tar.gz && sudo mv apache-maven-3.0.4 /usr/local
    
 Add the following three lines to your .bashrc:
 
